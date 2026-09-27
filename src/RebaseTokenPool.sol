@@ -9,8 +9,8 @@ import {IRebaseToken} from "./interfaces/IRebaseToken.sol";
 
 contract RebaseTokenPool is TokenPool {
     constructor(IERC20 _token, address[] memory _allowList, address _rmnProxy, address _router)
-        TokenPool(_token,18 ,  _allowList, _rmnProxy, _router){}
-    
+        TokenPool(_token, 18, _allowList, _rmnProxy, _router)
+    {}
 
     function lockOrBurn(Pool.LockOrBurnInV1 calldata lockOrBurnIn)
         external
